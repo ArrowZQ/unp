@@ -9,7 +9,6 @@ void my_str_cli(FILE *fp, int sockfd)
     FD_ZERO(&rset);
 
 
-    /* while (Fgets(sendline, MAXLINE, fp) != NULL) */
     for (;;)
     {
         FD_SET(fileno(fp), &rset);
